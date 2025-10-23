@@ -23,6 +23,31 @@ const mainNavItems = [
         title: 'Users',
         href: '/administrator/users',
         icon: User,
+        children:[
+            {
+                title: 'View Users',
+                href: '/administrator/users/users1',
+            },
+            {
+                title: 'Create User',
+                href: '/administrator/users/create',
+            },
+        ]
+    },
+    {
+        title: 'Departments',
+        href: '/administrator/departments',
+        icon: User,
+        children:[
+            {
+                title: 'View Departments',
+                href: '/administrator/departments/departments1',
+            },
+            {
+                title: 'Create Department',
+                href: '/administrator/departments/create',
+            },
+        ]
     },
 ];
 

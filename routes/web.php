@@ -16,7 +16,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/administrator/dashboard', function () {
         return Inertia::render('administrator/dashboard/page');
     })->name('dashboard');
-    Route::get('/administrator/users', function () {
+    Route::get('/administrator/users/users1', function () {
+        return Inertia::render('administrator/users/page');
+    });
+    Route::get('/administrator/users/create', function () {
+        return Inertia::render('administrator/users/page');
+    });
+    Route::get('/administrator/departments/departments1', function () {
+        return Inertia::render('administrator/users/page');
+    });
+      Route::get('/administrator/departments/create', function () {
         return Inertia::render('administrator/users/page');
     });
 });
